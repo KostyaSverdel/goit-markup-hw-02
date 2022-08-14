@@ -10,17 +10,21 @@
     --logo-plus-color: #ffffff;
     --address-bord-color: #ffffff;
     --botton-colors-portfolio: #f5f4fa;
+    --bacground-color-knopka: #188CE8;
+    --bacground-color-advantages:#F5F4FA;
+    --border-portfolio-pic: #EEEEEE;
 }
-.roof {
-    width: 1600px;
-    height: 80px;
-    background-color: var(--bacground-color);
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+   letter-spacing: 0.03em;
+    color: var(--titel-link-color);
 }
 .logo {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-font-family: 'Raleway'
+font-family: 'Raleway', sans-serif;
     letter-spacing: 0.03em;
 
     color: var(--hovers-and-logo-color)
@@ -30,8 +34,19 @@ font-family: 'Raleway'
 font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
-font-family: 'Raleway'
-letter-spacing: 0.03em;}
+font-family: 'Raleway', sans-serif;
+letter-spacing: 0.03em;
+text-decoration: none;
+}
+.logo-w-footer {
+    color: var(--bacground-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
     .navigation {
             font-weight: 500;
             font-size: 14px;
@@ -40,6 +55,7 @@ letter-spacing: 0.03em;}
     }
     .navigation-col {
         color: var(--titel-link-color);
+        text-decoration: none;
     }
         .navigation-col:hover, 
         .navigation-col:focus {
@@ -52,24 +68,29 @@ letter-spacing: 0.03em;}
         font-style: normal;
         letter-spacing: 0.03em;
         color: var(--contacts-link-color);
+        text-decoration: none;
     }
     .navig-adres:hover,
     .navig-adres:focus {
         color: var(--hovers-and-logo-color)
     }
-body {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--titel-link-color);
-}
     .board {
         /* width: 1600px;
         height: 600px; */
         background-color: var(--board-bacground-color);
     }
-
+.our-advantages {
+    background: var(--bacground-color-advantages);
+}
+.about-team-back {
+        width: 270px;
+        height: 368px;
+    background: var(--bacground-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+     0px 1px 1px rgba(0, 0, 0, 0.14);
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+}
     .zagolovok {
         font-weight: 900;
         font-size: 44px;
@@ -80,9 +101,8 @@ body {
         color: var(--address-bord-color)
     }
 .knopka { cursor: pointer;
-        font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 700;
+     
+
             font-size: 16px;
             line-height: 1.8;
             color: var(--logo-plus-color);
@@ -95,12 +115,29 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 .knopka:focus {
     background-color: var(--hovers-and-logo-color);
     color: var(--address-bord-color);
+background: var(--bacground-color-knopka);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
-.hide {display: none;}
+.portfolio-pic-back {
+        width: 370px;
+        height: 404px;
+    
+        background: var(--bacground-color);
+        border: 1px solid var(--border-portfolio-pic);
+}
+.visually-hidden {position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;}
 .list {
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
+
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
@@ -109,9 +146,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         color: var(--titel-link-color);
 }
 .list-description {
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
+ 
+
         font-size: 14px;
         line-height: 1.7;
         /* or 171% */
@@ -119,18 +155,16 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         color: var(--p-text-color);
 }
 .list-images-work {
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
+  
+
         font-size: 36px;
         line-height: 1.1;
         letter-spacing: 0.03em;
         color: var(--titel-link-color);
 }
 .name-staff {
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
+  
+
         font-size: 16px;
         line-height: 1.1;
         /* identical to box height */
@@ -139,9 +173,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         color: var(--titel-link-color);
 }
 .about-staff {
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
+
+   
         font-size: 16px;
         line-height: 1.1;
         /* identical to box height */
@@ -150,7 +183,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         color: var(--p-text-color);
 }
 .adress{
-    font-family: 'Roboto';
+  
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -158,9 +191,19 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         /* or 171% */
     color: var(--address-bord-color);
         letter-spacing: 0.03em;
+        text-decoration: none;
 }
-ul {list-style: none;}
+ul {list-style: none;
+}
 .button-portfolio {
+   
+
+        font-size: 16px;
+        line-height: 26px;
+        /* identical to box height, or 162% */
+    
+        text-align: center;
+        letter-spacing: 0.03em;
     cursor: pointer;
         width: 130px;
         height: 38px;
@@ -176,9 +219,8 @@ ul {list-style: none;}
  text-transform: uppercase;
 }
 .list-portfolio {
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
+  
+
         font-size: 18px;
         line-height: 2;
         /* identical to box height, or 200% */
@@ -187,9 +229,7 @@ ul {list-style: none;}
         color: var(--titel-link-color);
 }
 .list-portfolio-hide {
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
+
         font-size: 16px;
         line-height: 2.2;
         /* identical to box height, or 188% */
